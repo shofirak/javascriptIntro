@@ -1,11 +1,13 @@
+// looping membuat segitiga dengan bilangan
 const printSegitiga = 5;
 
 if (typeof printSegitiga === "number") {
-  for (let i = 1; i <= printSegitiga; i++) {
-    for (let j = i; j <= printSegitiga; j++) {
-      console.log(j);
+  for (let i = printSegitiga; i >= 1; i--) {
+    let a = "";
+    for (let j = 1; j <= i; j++) {
+      a += j;
     }
-    console.log("\n");
+    console.log(a);
   }
 } else {
   console.log("Data yang diinput harus berupa number!");
