@@ -12,13 +12,13 @@ if (mtk != '' && bahasaIndonesia != '' && bahasaInggris != '' && ipa != '') {
   if (hasil >= 90 && hasil <= 100) {
     console.log(`Rata-rata = ${hasil}
   Grade = A`);
-  } else if (hasil >= 80 && hasil <= 89) {
+  } else if (hasil >= 80) {
     console.log(`Rata-rata = ${hasil}
   Grade = B`);
-  } else if (hasil >= 70 && hasil <= 79) {
+  } else if (hasil >= 70) {
     console.log(`Rata-rata = ${hasil}
   Grade = C`);
-  } else if (hasil >= 60 && hasil <= 69) {
+  } else if (hasil >= 60) {
     console.log(`Rata-rata = ${hasil}
   Grade = D`);
   } else {
