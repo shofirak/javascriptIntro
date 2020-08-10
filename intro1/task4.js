@@ -11,26 +11,21 @@ let data = {
   },
   phone: "1-770-736-8031 x56442",
   website: "hildegard.org",
-}
+};
 
-const hobby = ['menonton film', 'menggambar'];
+const hobby = ["menonton film", "menggambar"];
 
 // mengubah value dari data yg tertera dan menambahkan key baru pakai spread operator
 const update = {
   ...data,
-  name: 'Shofira',
-  email: 'shofirakhairunnisa@gmail.com',
-  hobby
-}
+  name: "Shofira",
+  email: "shofirakhairunnisa@gmail.com",
+  hobby,
+};
 
-// console.log(update)
+console.log(update);
 
 // mengambil data street dan city dengan destructuring
-const {
-  street,
-  suite,
-  city,
-  zipcode
-} = data.address;
+const { street, suite, city, zipcode } = data.address;
 
 console.log(`${street} dan ${city}`);
