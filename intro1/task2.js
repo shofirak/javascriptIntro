@@ -2,11 +2,11 @@
 const mtk = 80;
 const bahasaIndonesia = 90;
 const bahasaInggris = 89;
-const ipa = 69;
+const ipa = 89;
 
 let hasil;
 
-if (mtk != '' && bahasaIndonesia != '' && bahasaInggris != '' && ipa != '') {
+if (typeof mtk === 'number' && typeof bahasaIndonesia === 'number' && typeof bahasaInggris === 'number' && typeof ipa === 'number') {
   hasil = (mtk + bahasaIndonesia + bahasaInggris + ipa) / 4;
 
   if (hasil >= 90 && hasil <= 100) {
