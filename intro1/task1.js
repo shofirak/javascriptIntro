@@ -5,19 +5,19 @@ const biodata = {
   hobbies: ["Menonton film", "menggambar"],
   isMarried: false,
   schoolList: [{
-      name: "MI Fathan Mubina",
+      name: "SD",
       yearIn: 2011,
       yearOut: 2015,
       major: null
     },
     {
-      name: "SMPIT Raudhatul Jannah",
+      name: "SMP",
       yearIn: 2015,
       yearOut: 2017,
       major: null
     },
     {
-      name: "SMK Wikrama Bogor",
+      name: "SMK",
       yearIn: 2017,
       yearOut: 2020,
       major: "RPL"
