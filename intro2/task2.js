@@ -2,7 +2,7 @@
 // function
 
 const searchName = (a, b, callback) => {
-  const output = name.filter(value => name === a).slice(0, b);
+  const output = name.filter((value) => value.includes(a)).slice(0, b);
   callback(output);
 };
 
@@ -28,4 +28,5 @@ const name = [
   "Olivia",
   "Penelope",
 ];
-searchName("angela", 3, showFilter);
+
+searchName("ll", 3, showFilter);
