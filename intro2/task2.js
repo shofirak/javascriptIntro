@@ -1,8 +1,8 @@
 // searching nama yang dibatasi jumlah outputnya dengan callback
 // function
 
-const searchName = (a, callback) => {
-  const output = name.filter(a);
+const searchName = (a, b, callback) => {
+  const output = name.filter(value => name === a).slice(0, b);
   callback(output);
 };
 
@@ -28,4 +28,4 @@ const name = [
   "Olivia",
   "Penelope",
 ];
-searchName("an", callback);
+searchName("angela", 3, showFilter);

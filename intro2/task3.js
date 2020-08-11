@@ -5,8 +5,13 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     console.log("Nilai akhir harus lebih besar dari nilai awal!");
   } else {
     let seleksi = dataArray.filter(value => value > nilaiAwal && value < nilaiAkhir);
-    console.log(seleksi.sort((a, b) => a - b))
+    // pengkondisian ada tidaknya output
+    if (seleksi != '') {
+      console.log(seleksi.sort((a, b) => a - b))
+    } else {
+      console.log("Tidak ada output yang ditampilkan")
+    }
   }
 }
 
-seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
+seleksiNilai(5, 20, [2, 25, 14, 17, 4, 30, 8]);
