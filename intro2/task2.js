@@ -7,7 +7,11 @@ const searchName = (a, b, callback) => {
 };
 
 const showFilter = (result) => {
-  console.log(result);
+  if (result != "") {
+    console.log(result);
+  } else {
+    console.log("Tidak ada data yang ditampilkan");
+  }
 };
 
 const name = [

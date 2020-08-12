@@ -13,7 +13,7 @@ console.log(kata1.concat(kata2));
 const kalimat = "Aku makan nasi";
 console.log(kalimat.toUpperCase());
 
-// 4. toLowerCase() - mengubah ke huruf kapital
+// 4. toLowerCase() - mengubah ke huruf kecil
 const kalimat1 = "Aku makan nasi";
 console.log(kalimat.toLowerCase());
 
@@ -40,5 +40,5 @@ const kata4 = ["aku", "makan", "nasi"];
 console.log(kata4.join(" "));
 
 //  10. toString() - mengembalikan representasi string
-const number = 10
+const number = 10;
 console.log(number.toString());
