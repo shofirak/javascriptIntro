@@ -33,4 +33,4 @@ const name = [
   "Penelope",
 ];
 
-searchName("ll", 3, showFilter);
+searchName("C", 3, showFilter);

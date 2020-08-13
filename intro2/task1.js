@@ -1,4 +1,4 @@
-// jelaskanlah 10 method bawaan JavaScript (Built-in Functions) beserta contoh penggunaannya
+// 10 method bawaan JavaScript (Built-in Functions) beserta contoh penggunaannya
 
 // 1. split() - mengkonversi ke array
 const kata = "Aku makan";

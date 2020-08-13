@@ -1,7 +1,9 @@
 // buat function untuk mencari data yang nilainya diantara kedua parameter dan diurutkan
 
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
-  if (nilaiAwal >= nilaiAkhir) {
+  if (isNaN(nilaiAwal && nilaiAkhir)) {
+    console.log("Data yang diinputkan harus number!")
+  } else if (nilaiAwal >= nilaiAkhir) {
     console.log("Nilai akhir harus lebih besar dari nilai awal!");
   } else if (dataArray.length < 5) {
     console.log("Data array kurang dari lima!");
@@ -18,4 +20,4 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
   }
 };
 
-seleksiNilai(5, 20, [2, 25, 14, 17, 4, 30, 8]);
+seleksiNilai('5', 20, [2, 25, 14, 7, 6]);
