@@ -8,30 +8,30 @@ const cekHariKerja = (day) => {
       if (cek) {
         resolve(cek);
       } else {
-        reject(new Error("Hari ini bukan hari kerja"));
+        reject("Hari ini bukan hari kerja");
       }
     }, 3000);
   });
 };
 
 // menggunakan then catch
-// cekHariKerja('senin')
-//   .then((response) => {
-//     console.log(`Hari ${response} adalah hari kerja`);
-//   })
-//   .catch((Error) => {
-//     console.log(Error);
-//   });
+cekHariKerja('selasa')
+  .then((response) => {
+    console.log(`Hari ${response} adalah hari kerja`);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 
 // menggunakan try catch
-const showDay = async () => {
-  try {
-    const result = await cekHariKerja("sabtu");
-    console.log(`Hari ${result} adalah hari kerja`);
-  } catch (error) {
-    console.log(error);
-  }
-};
+// const showDay = async () => {
+//   try {
+//     const result = await cekHariKerja("sabtu");
+//     console.log(`Hari ${result} adalah hari kerja`);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
-showDay()
+// showDay()
