@@ -37,7 +37,7 @@ const searchName = (value) => {
   });
 };
 
-searchName("ud")
+searchName("s")
   .then((response) => {
     console.log(response.join());
   })
