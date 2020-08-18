@@ -21,8 +21,9 @@
 //     console.log(`Maaf Anda harus mengulang kelas karena rata-rata nilai ${error}`);
 //   });
 
-// 2. search name
 
+
+// 2. search name
 const name = ["Budi", "Dodi", "Alek", "Caca", "Edi"];
 
 const searchName = (value) => {
@@ -37,7 +38,7 @@ const searchName = (value) => {
   });
 };
 
-searchName("s")
+searchName("ud")
   .then((response) => {
     console.log(response.join());
   })

@@ -4,7 +4,7 @@ const Wait = () => console.log('Tunggu Sebentar. Sedang mengambil data bulan')
 
 const getAllMonth = (callback) => {
   setTimeout(() => {
-      let error = false;
+      let error = true;
       let month = ["January", "February", "March", "April", "May", "Juni", "July", "August", "September", "October", "November", "Desember"];
 
       if (!error) {
@@ -16,24 +16,20 @@ const getAllMonth = (callback) => {
     4000)
 }
 
-// const showMonth = (status, result) => {
-//   if (status) {
-//     console.log(status, result)
-//   } else {
-//     console.log(error);
-//   }
-
-// };
-
 Wait();
+
 getAllMonth((err, result) => {
   if (!err) {
-    month.map((m) => console.log(m))
+    result.map((m) => console.log(m))
   } else {
-    console.log(err);
+    console.log(err.message);
   }
 })
 
+
+
+
+// percobaan 1 - tanpa callback parameter 2
 // const Wait = () => console.log('Tunggu Sebentar. Sedang mengambil data bulan')
 
 // const getAllMonth = (callback) => {

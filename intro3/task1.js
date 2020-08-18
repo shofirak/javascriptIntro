@@ -8,7 +8,7 @@ const cekHariKerja = (day) => {
       if (cek) {
         resolve(cek);
       } else {
-        reject("Hari ini bukan hari kerja");
+        reject(new Error("Hari ini bukan hari kerja"));
       }
     }, 3000);
   });
@@ -20,7 +20,7 @@ const cekHariKerja = (day) => {
 //     console.log(`Hari ${response} adalah hari kerja`);
 //   })
 //   .catch((error) => {
-//     console.log(error);
+//     console.log(error.message);
 //   });
 
 
@@ -30,7 +30,7 @@ const showDay = async () => {
     const result = await cekHariKerja("selasa");
     console.log(`Hari ${result} adalah hari kerja`);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 
