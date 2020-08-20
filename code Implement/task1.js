@@ -22,4 +22,4 @@ const palindrom = text => {
   }
 }
 
-palindrom('true')
+palindrom('malam')

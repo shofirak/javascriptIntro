@@ -9,11 +9,11 @@ const divideAndSort = num => {
       a
       .toString()
       .split("")
-      .sort((a, b) => a - b)
+      .sort()
       .join("")
     );
 
-    console.log(sequence.join(""));
+    console.log(result = parseInt(sequence.join('')));
   } else {
     console.log("Data yang diinputkan bukan number!");
   }
