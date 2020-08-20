@@ -1,10 +1,14 @@
-// reverse kata palindrom
-const reverse = text => {
+// deteksi kata palindrom
+const palindrom = text => {
 
   // pengkondisian inputan string
   if (!text) {
     console.log("Data harus diisi!")
-  } else if (typeof text === 'string') {
+  } else if (typeof text !== 'string') {
+
+    console.log("Data yang diinputkan harus berupa string")
+
+  } else {
 
     const newText = text.split("");
     const reverse = text.split("").reverse().join();
@@ -15,10 +19,7 @@ const reverse = text => {
     } else {
       console.log("Not Palindrom");
     }
-
-  } else {
-    console.log("Data yang diinputkan harus berupa string")
   }
 }
 
-reverse('true')
+palindrom('true')

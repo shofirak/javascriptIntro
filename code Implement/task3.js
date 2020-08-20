@@ -1,16 +1,16 @@
 // 0 sebagai pemisah dan urutkan bilangan berdasar kelompok tersebut
 
-const divideAndSort = (num) => {
+const divideAndSort = num => {
   // pengkondisian input berupa number
   if (typeof num === "number") {
     const newNumber = num.toString().split(0);
 
     const sequence = newNumber.map((a) =>
       a
-        .toString()
-        .split("")
-        .sort((a, b) => a - b)
-        .join("")
+      .toString()
+      .split("")
+      .sort((a, b) => a - b)
+      .join("")
     );
 
     console.log(sequence.join(""));
