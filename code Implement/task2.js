@@ -17,8 +17,8 @@ const reverseKalimat = kalimat => {
     }
 
   } else {
-    console.log("Data harus berupa string!")
+    console.log("Data yang diinput harus berupa string!")
   }
 }
 
-reverseKalimat('Saya Belajar Javascript')
+reverseKalimat('Saya Belajar Javasript')
