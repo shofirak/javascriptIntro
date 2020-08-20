@@ -10,8 +10,8 @@ const palindrom = text => {
 
   } else {
 
-    const newText = text.split("");
-    const reverse = text.split("").reverse().join();
+    const newText = text.toLowerCase().split("");
+    const reverse = text.toLowerCase().split("").reverse().join();
 
     // pengkondisian palindrom
     if (newText == reverse) {
@@ -22,4 +22,4 @@ const palindrom = text => {
   }
 }
 
-palindrom('malam')
+palindrom('Malam')
